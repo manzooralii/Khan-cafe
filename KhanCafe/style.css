@@ -1,0 +1,706 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sarabun', sans-serif;
+}
+
+/* ================= NAVIGATION ================= */
+
+.nav-bar {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.nav-top {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav-link ul {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-link ul li {
+  list-style: none;
+}
+
+.nav-link ul a {
+  font-size: 18px;
+  color: #716f6f;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.logo a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo a:hover {
+  color: #dc3545;
+}
+
+#active a {
+  color: #a22a2a;
+}
+
+.nav-link ul li a:hover {
+  color: #a22a2a;
+}
+
+/* ================= BUTTON ================= */
+
+.reservation button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 35px;
+  border-radius: 10px;
+  border: 1px solid #bb3d3b;
+  color: #ffffff;
+  background-color: #dc3545;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.reservation button:hover {
+  background-color: #bb3d3b;
+  border-color: #a22a2a;
+}
+
+
+.toggle-btn {
+  display: none;
+  font-size: 34px;
+  background: none;
+  border: none;
+  color: rgb(183, 7, 7);
+  cursor: pointer;
+}
+
+
+/* =================== Responsive Navbar =================== */
+@media (max-width: 768px) {
+  .nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 16px;
+  }
+
+  .toggle-btn {
+    display: block;
+    font-size: 32px;
+    background: none;
+    border: none;
+    color: #a22a2a;
+    cursor: pointer;
+    order: 1;
+  }
+
+  .logo {
+    flex: 1;
+    text-align: center;
+    order: 2;
+  }
+
+  .reservation {
+    order: 3;
+    text-align: right;
+  }
+
+
+
+  .nav-link {
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  .nav-link.active {
+    display: block;
+  }
+
+  .nav-link ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.hero-section {
+  width: 100%;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 25%, rgba(0, 0, 0, 0)),
+    url("pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg");
+  background-size: cover;
+}
+
+.hero-container {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 40px;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.text-area h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.rating {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFD700;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.rating span {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 5px;
+  color: #ffffff;
+}
+
+.rating i {
+  color: #ffc107;
+}
+
+.rating .rating-score {
+  font-weight: 400;
+  color: #000000;
+}
+
+.rating .review-count {
+  margin-left: auto;
+  font-size: 14px;
+  color: #999999;
+}
+
+/* ================= TEXT ================= */
+
+p {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px auto;
+  text-align: center;
+  color: #d8d4d4;
+}
+
+p strong {
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ================= MENU SECTION ================= */
+
+.menu-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.menu-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+.cart-section {
+  max-width: 1440px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.cart {
+  max-width: 370px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.cart:hover {
+  transform: translateY(-5px);
+}
+
+.cart img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.img-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffc107;
+  color: #ffffff;
+  padding: 6px 16px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+/* ================= BUY SECTION ================= */
+
+.buy-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  padding: 20px;
+}
+
+.buy-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.buy-section .price {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffc107;
+  background-color: #a09898;
+  border-radius: 12px;
+}
+
+/* ================= BACKGROUND IMAGE ================= */
+
+.bg {
+  width: 100%;
+  height: 400px;
+  max-width: 1440px;
+  background-image: url(priscilla-du-preez-W3SEyZODn8U-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ================= EVENT SECTION ================= */
+
+.event-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.event-header {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+/* ================= FEATURED SECTION ================= */
+
+.featured-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 570px;
+  height: 350px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.3);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  pointer-events: none;
+}
+
+.label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.label span {
+  max-width: 80px;
+  background-color: #bb3d3b;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.label h2 a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  transition: color 0.3s ease;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.label h2 a:hover {
+  color: #bb3d3b;
+}
+
+/* ================= PROMOTION SECTION ================= */
+
+.promotion-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.Featured-cart {
+  width: 100%;
+  max-width: 370px;
+  height: 350px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.Featured-cart img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.Featured-cart img:hover {
+  transform: scale(1.2);
+}
+
+.promotion {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.promotion .promotion-grey {
+  background-color: #0dcaf0;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.promotion-black {
+  background-color: #100f0f;
+  font-size: 12px;
+  padding: 4px 10px;
+  display: inline-block;
+  width: fit-content;
+  border-radius: 4px;
+  color: white;
+}
+
+time {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #100f0f;
+  font-weight: 600;
+}
+
+.Featured-cart a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #100f0f;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  padding-left: 20px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #bb3d3b;
+  cursor: pointer;
+}
+
+.footer-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url("Footer-image/samuel-regan-asante-4vd1ETbplSk-unsplash.jpg") no-repeat center center/cover;
+  color: #fff;
+  padding: 60px 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.footer-section h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: center;
+}
+
+.footer-box {
+  flex: 1 1 250px;
+}
+
+.footer-box h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer-box p,
+.footer-box a {
+  display: block;
+  margin-bottom: 10px;
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.Opening-time {
+  display: block;
+  margin-bottom: 10px;
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+address {
+  display: block;
+  margin-bottom: 20px;
+  color: #aaaaaa;
+  font-size: 16px;
+  font-style: normal;
+}
+
+
+
+#Directions {
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: #212529;
+  color: #aaaaaa;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+#Directions:hover {
+  background-color: #444;
+}
+
+.links a {
+  display: inline-block;
+  /* margin: 6px 10px; */
+  color: #aaaaaa;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.links a i {
+  margin-right: 8px;
+  padding: 8px;
+  font-size: 22px;
+  border-radius: 50%;
+
+}
+
+.links a:hover {
+  color: #a22a2a;
+}
+
+.copy-act {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+
+
+@media (max-width: 430px) {
+  .nav-top {
+    padding: 10px;
+    height: auto;
+  }
+
+  .nav-link ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .reservation button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .hero-section {
+    height: auto;
+    background-position: center;
+  }
+
+  .text-area h1 {
+    font-size: 32px;
+  }
+
+  .cart-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cart {
+    max-width: 100%;
+  }
+
+  .footer-container {
+    align-items: center;
+  }
+
+  .footer-box {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .nav-top {
+    padding: 16px;
+  }
+
+  .hero-section {
+    height: 400px;
+  }
+
+  .text-area h1 {
+    font-size: 42px;
+  }
+
+  .cart-section {
+    gap: 20px;
+  }
+
+  .Featured-cart {
+    max-width: 100%;
+  }
+
+  .footer-container {
+    gap: 20px;
+  }
+}

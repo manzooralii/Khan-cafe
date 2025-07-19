@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-TI4RQqJhCDHb7RS3+RQ9kNwGKHqycA0DqUZiBOpO6ThEx5fPzGT4RfZ+Lkzjz6vmhyc9+9fsTbU0OaV6c04+NQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
+    <title>Resturent-website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="nav-bar">
+  <div class="nav-top">
+    
+    <div class="logo">
+      <a href="#">Khan Cafe</a>
+    </div>
+
+    <!-- ✅ Toggle Button -->
+    <button class="toggle-btn" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- ✅ Navigation Links with ID -->
+    <div class="nav-link" id="navLinks">
+      <ul>
+        <li id="active"><a href="#">Home</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Our Updates</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="reservation">
+      <button type="button">Reservation</button>
+    </div>
+  </div>
+</header>
+
+
+    <section class="hero-section">
+
+        <div class="hero-container">
+
+            <div class="text-area">
+
+                <h1>Delicious Steaks</h1>
+                <div class="rating" aria-label="Rated 4 out of 5 stars">
+                    <span>4.4/5</span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+               
+                  </div>
+
+                <p>From <strong>1,206+</strong> Customer Reviews</p>
+            </div>
+        <!-- </div> -->
+    </section>
+
+   <section class="menu-section">
+
+  <div class="menu-container">
+    <h1 class="header">Special Menus</h1>
+    <div class="cart-section">
+
+      <!-- Card 1 -->
+      <div class="cart">
+        <img src="Menu-desh/brett-jordan-8xt8-HIFqc8-unsplash.jpg" alt="Morning Fresh Dish">
+        <span class="img-tag">Breakfast</span>
+        <div class="buy-section">
+          <div class="buy-top">
+            <h2>Morning Fresh</h2>
+            <span class="price">$86</span>
+          </div>
+          <div class="rating" aria-label="Rated 3 out of 5 stars">
+            <span class="rating-score">3/5</span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="review-count">44 Reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="cart">
+
+        <img src="Menu-desh/farhad-ibrahimzade-MGKqxm6u2bc-unsplash.jpg" alt="Tooplate Soup">
+        <span class="img-tag">Lunch</span>
+
+        <div class="buy-section">
+          <div class="buy-top">
+            <h2>Tooplate Soup</h2>
+            <span class="price">$86</span>
+          </div>
+          <div class="rating" aria-label="Rated 3 out of 5 stars">
+            <span class="rating-score">3/5</span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="review-count">44 Reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="cart">
+        <img src="Menu-desh/keriliwi-c3mFafsFz2w-unsplash.jpg" alt="Premium Steak">
+        <span class="img-tag">Dinner</span>
+        <div class="buy-section">
+          <div class="buy-top">
+            <h2>Premium Steak</h2>
+            <span class="price">$86</span>
+          </div>
+          <div class="rating" aria-label="Rated 3 out of 5 stars">
+            <span class="rating-score">3/5</span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="review-count">44 Reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+
+      <div class="cart">
+        <img src="Menu-desh/farhad-ibrahimzade-ZipYER3NLhY-unsplash.jpg" alt="Spicy Steak Bowl">
+        <span class="img-tag">Dinner</span>
+        <div class="buy-section">
+          <div class="buy-top">
+            <h2>Seafood Set</h2>
+            <span class="price">$86</span>
+          </div>
+          <div class="rating" aria-label="Rated 3 out of 5 stars">
+            <span class="rating-score">3/5</span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="review-count">44 Reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+
+      <div class="cart">
+        <img src="Menu-desh/louis-hansel-dphM2U1xq0U-unsplash.jpg" alt="Seafood Set">
+        <span class="img-tag">Breakfast</span>
+
+        <div class="buy-section">
+          <div class="buy-top">
+            <h2>Burger Set</h2>
+            <span class="price">$16</span>
+          </div>
+          <div class="rating" aria-label="Rated 3 out of 5 stars">
+            <span class="rating-score">4.3/5</span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="review-count">102 Reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+
+      <div class="cart">
+        <img src="Menu-desh/brett-jordan-8xt8-HIFqc8-unsplash.jpg" alt="Burger Set">
+        <span class="img-tag">  Lunch</span>
+        <div class="buy-section">
+          <div class="buy-top">
+            <h2>Healthy Soup</h2>
+            <span class="price">$36</span>
+          </div>
+          <div class="rating" aria-label="Rated 3 out of 5 stars">
+            <span class="rating-score">3/5</span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span class="review-count" >64 Reviews</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+   <section class="bg"> </section> 
+   
+   <section class="event-section">
+  <h2 class="event-header">News & Events</h2>
+
+  <div class="featured-section">
+    <div class="card">
+      <a href="#"><img src="event/pablo-merchan-montes-Orz90t6o0e4-unsplash_1.jpg" alt=""></a>
+      <div class="label">
+        <span>Featured</span>
+        <h2><a href="#">Healthy Lifestyle and Happy Living Tips</a></h2>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="event/stefan-johnson-xIFbDeGcy44-unsplash_2.jpg" alt="">
+      <div class="label">
+        <span>Featured</span>
+        <h2><a href="#">How to Make a Healthy Meal</a></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="promotion-section">
+  
+    <div class="Featured-cart">
+      <img src="event/gilles-lambert-S_LhjpfIdm4-unsplash_3.jpg" alt="">
+      <div class="promotion">
+        <span class="promotion-grey">Promotions</span>
+        <time datetime="2023-04-08" class="date">8 April 2023</time>
+      </div>
+        <a href="#">Is Coconut Good for You?</a>
+
+    </div>
+
+    <div class="Featured-cart">
+      <a href="#"><img src="event/caroline-attwood-bpPTlXWTOvg-unsplash_4.jpg" alt=""></a>
+      <div class="promotion">
+        <span class="promotion-black">News</span>
+      </div>
+        <a href="#">Salmon Steak Noodle</a>
+    </div>
+
+    <div class="Featured-cart">
+      <a href="#"><img src="event/louis-hansel-GiIiRV0FjwU-unsplash_5.jpg" alt=""></a>
+      <div class="promotion">
+        <span class="promotion-grey">Meetings</span>
+        <time datetime="2024-04-21" class="date">21 April 2024</time>
+      </div>
+        <a href="#">Making a Healthy Salad</a>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer-section">
+
+  <h1>Khan Cafe</h1>
+  <div class="footer-container">
+
+    <section class="footer-box">
+      <h2>Location</h2>
+      <address>Main KLP Road, Sadiqabad</address>
+      <a href="#" id="Directions">Directions</a>
+    </section>
+
+    <section class="footer-box">
+      <h2>Opening Hours</h2>
+      <p class="day">Monday - Friday</p>
+      <time class="Opening-time" datetime="10:00">10:00 AM - 08:00 PM</time>
+      <a href="tel:03001234567">Tel: 0300-1234567</a>
+    </section>
+
+
+<section class="footer-box">
+  <h2>Social</h2>
+  <div class="links">
+    <a href="#"><i class="fab fa-instagram"></i> </a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+</section>
+  </div>
+  <p class="copy-act">&copy; 2022 Khan Cafe. All rights reserved.</p>
+</footer>
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+  }
+</script>
+
+</body>
+
+</html>
+

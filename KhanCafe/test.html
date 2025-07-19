@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Navbar Layout */
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #111;
+  color: white;
+  position: relative;
+}
+
+.nav-link ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+/* Toggle Button (Hamburger) */
+.toggle-btn {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Toggle */
+@media (max-width: 768px) {
+  .toggle-btn {
+    display: block;
+  }
+
+  .nav-link {
+    display: none;
+    /* width: 100%; */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #222;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .nav-link.active {
+    display: block;
+  }
+
+  .nav-link ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .reservation {
+    display: none;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header class="nav-bar">
+  <div class="nav-top">
+    <div class="logo">
+      <a href="#">Khan Cafe</a>
+    </div>
+
+    <!-- Toggle Button -->
+    <button class="toggle-btn" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="nav-link" id="navLinks">
+      <ul>
+        <li id="active"><a href="#">Home</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Our Updates</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="reservation">
+      <button type="button">Reservation</button>
+    </div>
+  </div>
+</header>
+
+<!-- JS Function (Place before </body>) -->
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+  }
+</script>
+
+    
+</body>
+</html>
